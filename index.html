@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>💙 XIII EJC NSC 💙</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        background-color: #111827;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+      }
+
+      body,
+      html,
+      section,
+      div {
+        background-color: #111827;
+      }
+
+      .hidden-element {
+        opacity: 0;
+        transform: translateY(20px);
+        transition-property: opacity, transform;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-out;
+      }
+
+      .visible-element {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .section-1 .hidden-element {
+        transition-duration: 0.7s;
+        transition-timing-function: ease-in-out;
+      }
+
+      .section-2 .hidden-element {
+        transform: translateX(-50px);
+        transition-duration: 0.8s;
+        transition-timing-function: ease-out;
+      }
+
+      .section-3 .hidden-element {
+        transform: translateY(-30px);
+        transition-duration: 1s;
+        transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+      }
+
+      #globe-container {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .arrow {
+        animation: bounce 1.5s infinite;
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(10px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex justify-center mt-4">
+      <svg
+        class="w-8 h-8 text-white arrow"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M19 9l-7 7-7-7"
+        ></path>
+      </svg>
+    </div>
+
+    <section class="min-h-screen flex justify-center items-center section-1">
+      <div
+        class="text-white text-5xl max-w-3xl text-center px-4 hidden-element italic"
+      >
+        <p>
+          XIII EJC NSC - Romanos 12,2
+        </p>
+      </div>
+    </section>
+
+    <div class="flex justify-center">
+      <svg
+        class="w-8 h-8 text-white arrow"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M19 9l-7 7-7-7"
+        ></path>
+      </svg>
+    </div>
+
+    <section class="min-h-screen flex justify-center items-center section-1">
+      <div id="globe-container"></div>
+    </section>
+
+    <div class="flex justify-center">
+      <svg
+        class="w-8 h-8 text-white arrow"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M19 9l-7 7-7-7"
+        ></path>
+      </svg>
+    </div>
+
+    <section class="min-h-screen flex justify-center items-center section-1">
+      <div
+        class="text-white text-5xl max-w-3xl text-center px-4 hidden-element italic"
+      >
+        <p>
+          "Não vos conformeis com esse mundo, mas transformai-vos pela renovação
+          do vosso espírito, para que possais discernir qual é a vontade de
+          Deus, o que é bom, o que lhe agrada e o que é perfeito."
+        </p>
+      </div>
+    </section>
+
+    <div class="flex justify-center">
+      <svg
+        class="w-8 h-8 text-white arrow"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M19 9l-7 7-7-7"
+        ></path>
+      </svg>
+    </div>
+
+    <section class="min-h-screen flex justify-center items-center section-2">
+      <div
+        class="text-white text-5xl max-w-3xl text-center px-4 hidden-element italic"
+      >
+        <p>💙 Você é muito importante, lembre-se disso! 💙</p>
+      </div>
+    </section>
+
+    <div class="flex justify-center">
+      <svg
+        class="w-8 h-8 text-white arrow"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M19 9l-7 7-7-7"
+        ></path>
+      </svg>
+    </div>
+
+    <section
+      class="min-h-screen flex flex-col justify-center items-center section-3"
+      id="form-container"
+    >
+      <div
+        class="text-white text-5xl max-w-3xl text-center px-4 hidden-element mb-8"
+      >
+        <p>Eu colocava meu nome aqui 👀</p>
+      </div>
+      <div class="flex flex-col items-center hidden-element">
+        <input
+          type="text"
+          id="name-input"
+          placeholder="Digite seu nome"
+          class="px-4 py-2 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-black text-3xl"
+        />
+        <button
+          id="submit-btn"
+          class="px-6 py-2 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 text-3xl"
+        >
+          Enviar
+        </button>
+      </div>
+    </section>
+
+    <script>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible-element");
+          } else {
+            entry.target.classList.remove("visible-element");
+          }
+        });
+      });
+
+      const hiddenElements = document.querySelectorAll(".hidden-element");
+      hiddenElements.forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
