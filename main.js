@@ -15,15 +15,12 @@ const init = () => {
   camera.position.z = isMobile ? 6 : 4;
 
   renderer = new THREE.WebGLRenderer({ antialias: true });
-  renderer.setSize(container.clientWidth, container.clientHeight);
+  renderer.setSize(container.clientWidth, container.clientHeight - 15);
   renderer.setClearColor(0x111827, 1);
   container.appendChild(renderer.domElement);
 
   const geometry = new THREE.SphereGeometry(1, 32, 32);
   const textureLoader = new THREE.TextureLoader();
-  // const texture = textureLoader.load(
-  // "https://www.solarsystemscope.com/textures/download/2k_earth_nightmap.jpg"
-  // );
   const texture = textureLoader.load("./2k.jpg");
   const material = new THREE.MeshBasicMaterial({ map: texture });
 
