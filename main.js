@@ -51,7 +51,7 @@ const animate = () => {
 
 init();
 
-document.getElementById("submit-btn").addEventListener("click", async () => {
+const submitForm = async () => {
   const name = document.getElementById("name-input").value.trim();
   if (name) {
     try {
@@ -67,5 +67,13 @@ document.getElementById("submit-btn").addEventListener("click", async () => {
     } catch (error) {
       console.error("Error:", error);
     }
+  }
+};
+
+document.getElementById("submit-btn").addEventListener("click", submitForm);
+
+document.getElementById("name-input").addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    submitForm();
   }
 });
